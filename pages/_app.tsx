@@ -1,7 +1,14 @@
 import '../styles/globals.css'
+import Navbar from '../components/Navbar';
+import React from 'react';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function Nextfire({ Component, pageProps }) {
+  return (
+    <React.Fragment>
+      <Navbar />
+      <Component {...pageProps} />
+    </React.Fragment>
+  );
 }
 
-export default MyApp
+export default Nextfire
